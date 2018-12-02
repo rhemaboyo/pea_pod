@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Drag n Drop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="droppable">
+      <div id='list' class="list" draggable="true" ondragstart="dragStart(event)">
+        <div class="heading">
+          <h4 class="list-title">List Heading</h4>
+        </div>
+        <div class="cards">
+          <div class="list-card">
+            <p>Card title</p>
+            <span class="js-badges">
+              <div class="badge is-complete">
+                <span class="badge-icon">
+                  <i class="ion-android-checkbox-outline fa-lg pr-1"></i>
+                </span>
+                <span class="badge-text">7/7</span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    <div class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    <div class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    <div class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    <div class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    <div class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    <div class="droppable" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+  </div>
+</body>
+<!-- <div class="directions">
+  Rank the statements as they relate to yourself with 1 being most like you and 4 being least like you.
+</div>
+<div class="choices-container">
+  <div class="choice-box" id="id_1" draggable="true" ondragstart="dragStart(event)" ondragend="dragEnd(event)" ondragover="dragOver(event)">
+    change to period marks
+    <img class="choice-bullets" draggable="false" src="assets/images/choice-bullets-max.png">
+    <select class="choice-num-select">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    <p class="choice-text">I'm responsible</p>
+  </div>
+  <div class="choice-box" id="id_2" draggable="true" ondragstart="dragStart(event)" ondragend="dragEnd(event)" ondragover="dragOver(event)">
+    <img class="choice-bullets" draggable="false" src="assets/images/choice-bullets-max.png">
+    <select class="choice-num-select">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    <p class="choice-text">I like to research things</p>
+  </div>
+  <div class="choice-box" id="id_3" draggable="true" ondragstart="dragStart(event)" ondragend="dragEnd(event)" ondragover="dragOver(event)">
+    <img class="choice-bullets" draggable="false" src="assets/images/choice-bullets-max.png">
+    <select class="choice-num-select">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    <p class="choice-text">I enjoy bring people together</p>
+  </div>
+  <div class="choice-box" id="id_4" draggable="true" ondragstart="dragStart(event)" ondragend="dragEnd(event)" ondragover="dragOver(event)">
+    <img class="choice-bullets" draggable="false" src="assets/images/choice-bullets-max.png">
+    <select class="choice-num-select">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    <p class="choice-text">I enjoy doing new things</p>
+  </div>
+</div> -->
+</html>
