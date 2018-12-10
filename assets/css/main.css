@@ -62,8 +62,12 @@
     margin: 16px 0;
   }
 
-  li {
+  ul li {
 		list-style: none;
+    margin-bottom: .5%;
+  }
+
+  ol li {
     margin-bottom: .5%;
   }
 
